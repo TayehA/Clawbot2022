@@ -60,7 +60,7 @@ def pre_auto():
 
 
 def robots_in_disguise():#automonous
-    #YOU CANT SET THE VELOCITY ABOVE 150% DO YHOU THINK YOU CAN OVERCLOCK THIS JUSTIN?!??!?!?
+    #YOU CANT SET THE VELOCITY ABOVE 100% DO YOU THINK YOU CAN OVERCLOCK THIS JUSTIN?!??!?!?
 
     left_motor.set_velocity(100, PERCENT)
     right_motor.set_velocity(100, PERCENT)
