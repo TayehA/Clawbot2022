@@ -14,7 +14,7 @@ right_motor = Motor(Ports.PORT2, GearSetting.RATIO_18_1, True)
 con = Controller()#controler
 brain=Brain()
 
-def allah(): #Driver control named it allah cuz allah great
+def driver_control(): #Driver control named it allah cuz allah great
     #loop should not break unless automonous is enabled
 
     while True:
@@ -59,7 +59,7 @@ def pre_auto():
     brain.screen.print("Ameer is cool!")
 
 
-def robots_in_disguise():#automonous
+def auto():#automonous
     #YOU CANT SET THE VELOCITY ABOVE 100% DO YOU THINK YOU CAN OVERCLOCK THIS JUSTIN?!??!?!?
 
     left_motor.set_velocity(100, PERCENT)
@@ -80,5 +80,5 @@ def robots_in_disguise():#automonous
 
 
 
-Competition(allah, robots_in_disguise)
+Competition(driver_control, auto)
 pre_auto()
