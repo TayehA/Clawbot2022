@@ -27,6 +27,12 @@ def driver_control(): #Driver control named it allah cuz allah great
         elif con.buttonB.pressing()==True:
             arm.set_velocity(60, PERCENT) 
             arm.spin(REVERSE)
+        if con.buttonX.pressing()==True:
+            claw.set_velocity(50, PERCENT)
+            claw.spin(FORWARD)
+        elif con.buttonY.pressing()==True:
+            claw.set_velocity(50, PERCENT)
+            claw.spin(REVERSE)
         else:
             arm.set_velocity(0, PERCENT)
             arm.set_stopping(HOLD) #this should make the arm stay in place
