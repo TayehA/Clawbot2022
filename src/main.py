@@ -30,6 +30,16 @@ def driver_control(): #Driver control named it allah cuz allah great
         else:
             arm.set_velocity(0, PERCENT)
             arm.set_stopping(HOLD) #this should make the arm stay in place
+            
+            pos1=con.axis3.position() 
+            pos2=con.axis2.position()
+
+            right_motor.set_velocity(pos2, PERCENT)
+            left_motor.set_velocity(pos1, PERCENT)
+            left_motor.spin(FORWARD)
+            right_motor.spin(FORWARD)
+
+
 
         wait(20, MSEC) 
         #speed does not matter, it only matter how long it lasts (THAT WAS SHE SAID)
