@@ -14,7 +14,7 @@ right_motor = Motor(Ports.PORT2, GearSetting.RATIO_18_1, True)
 con = Controller()#controler
 brain=Brain()
 
-def driver_control(): #Driver control named it allah cuz allah great
+def driver_control(): 
     #loop should not break unless automonous is enabled
 
     while True:
